@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('./assets/fonts/Vazir.eot') format('eot');
+  src: url('./assets/fonts/Vazir.ttf') format('ttf');
+  src: url('./assets/fonts/Vazir.woff') format('woff');
+}
+
+*{
+  font-family: 'Vazir';
+}
+
+a:hover, button:hover{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.modal-content {
+  animation-name: animatetop;
+  animation-duration: 0.5s
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
